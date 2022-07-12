@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+
+    <h1>查詢</h1>
+    <form action="/api/res" class="search" id="search" method="GET"> 
+        <p>輸入行政區域：<input type="text" name="dist" /></p>
+        <p>選擇樓層：<input type="number" name="floor" min="0" placeholder="無樓層請輸入0"/></p>
+        <p>選擇建物型態：
+            <select name="building">
+                <option value="住宅大樓(11層含以上有電梯)">住宅大樓(11層含以上有電梯)</option>
+                <option value="公寓(5樓含以下無電梯)">公寓(5樓含以下無電梯)</option>
+                <option value="工廠">工廠</option>
+                <option value="其他">其他</option>
+                <option value="店面(店鋪)">店面(店鋪)</option>
+                <option value="透天厝">透天厝</option>
+                <option value="華廈(10層含以下有電梯)">華廈(10層含以下有電梯)</option>
+                <option value="廠辦">廠辦</option>
+                <option value="農舍">農舍</option>
+                <option value="辦公商業大樓">辦公商業大樓</option>
+            </select>
+        </p>
+        <button id="submit">提交</button>
+    </form>
+</body>
+</html>
